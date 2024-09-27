@@ -7,40 +7,29 @@ public class CadastroDeLivros {
 
     Livro CadastrarLivro() {
         Livro livro = new Livro();
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Qual o Titulo do livro? ");
-        String titulo = scanner.nextLine();
+        String titulo = "Harry Potter e a Pedra Filosofal";
         livro.setTitulo(titulo);
 
-        System.out.print("\nQual o Autor do livro? ");
-        String autor = scanner.nextLine();
+        String autor = "Clarice Lispector";
         livro.setAutor(autor);
 
-        System.out.print("\nQual o Genero do livro? ");
-        String genero = scanner.nextLine();
+        String genero = "Aventura";
         livro.setGenero(genero);
 
-        System.out.print("\nQuantos exemplares disponiveis do livro? ");
-        int exemplares = scanner.nextInt();
-        scanner.nextLine();
+        int exemplares = 200;
         livro.setExemplares(exemplares);
 
-        System.out.print("\nQual o código ISBN do livro? ");
-        String ISBN = scanner.nextLine();
+        String ISBN = "2304-7686-3477-2349-3914";
         livro.setISBN(ISBN);
 
-        System.out.print("\nQual o editora do livro? ");
-        String editora = scanner.nextLine();
+        String editora = "Warner";
         livro.setEditora(editora);
 
-        System.out.print("\nQual o numero de paginas do livro? ");
-        int numeroDePaginas = scanner.nextInt();
-        scanner.nextLine();
+        int numeroDePaginas = 351;
         livro.setNumeroDePaginas(numeroDePaginas);
 
-        System.out.print("\nQual a data de lançamento do livro? ");
-        String dataDeLançamento = scanner.nextLine();
+        String dataDeLançamento = "1977";
         livro.setDataDeLançamento(dataDeLançamento);
 
         return livro;

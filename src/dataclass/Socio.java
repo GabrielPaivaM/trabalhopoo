@@ -1,5 +1,6 @@
 package dataclass;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Socio {
@@ -7,8 +8,12 @@ public class Socio {
     String CPF;
     String RG;
     String dataDeNascimento;
-    List<Livro> livrosLocados;
+    List<Livro> livrosLocados = new ArrayList<>();
     Integer quantidadeDeLivrosLocados;
+
+    public void clearLivrosLocados() {
+        this.livrosLocados.clear();
+    }
 
     public String getNome() {
         return nome;
@@ -46,8 +51,8 @@ public class Socio {
         return livrosLocados;
     }
 
-    public void setLivrosLocados(List<Livro> livrosLocados) {
-        this.livrosLocados = livrosLocados;
+    public void setLivrosLocados(Livro livro) {
+        this.livrosLocados.add(livro);
     }
 
     public Integer getQuantidadeDeLivrosLocados() {

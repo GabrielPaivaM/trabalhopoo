@@ -1,11 +1,12 @@
 package dataclass;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Autor {
     String nome;
     Integer idade;
-    List<Livro> livrosPublicados;
+    List<Livro> livrosPublicados = new ArrayList<>();
 
     public String getNome() {
         return nome;
